@@ -1,0 +1,131 @@
+:root {
+    --background-primary: #252525;
+    --color-primary: #fafafa;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(121, 121, 121);
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+body {
+    background-color: var(--background-primary);
+    color: var(--color-primary);
+}
+
+main section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section.box-principal article {
+    padding: 25px 35px;
+    background-color: #ffffff0c;
+    border-radius: 10px;
+}
+
+main section.box-principal article label {
+    font-size: 26px;
+}
+
+main section.box-principal article .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 25px;
+    font-size: 24px;
+}
+
+main section.box-principal article input.message {
+    width: 100%;
+
+    font-size: 24px;
+    text-align: left;
+    color: #fafafa;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: #ffffff10;
+    border: none;
+    border-bottom: 3px solid #00000078;
+
+    transition: .5s ease all;
+}
+
+main section.box-principal article select.languages {
+    cursor: pointer;
+    
+    width: 250px;
+    margin-left: 10px;
+
+    font-size: 24px;
+    text-align: center;
+    color: #fafafa;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: #0000000f;
+    border: none;
+    border-bottom: 3px solid #00000078;
+    transition: .5s ease all;
+    text-overflow: ellipsis;
+}
+
+main section.box-principal article select.languages option {
+    font-size: 18px;
+    text-align: center;
+    color: #fafafa;
+    padding: 5px 20px;
+    background: #292929;
+    border-bottom: 3px solid #00000078;
+    transition: .2s ease all;
+}
+
+select option:checked,
+select option:hover {
+    box-shadow: 0 0 10px 100px #000 inset;
+    border: 3px solid white;
+}
+
+main section.box-principal article input.message:hover,
+main section.box-principal article input.message:focus {
+    background: #ffffff20;
+    border-bottom: 4px solid #00000078;
+}
+
+main section.box-principal article .buttons button {
+    margin-top: 20px;
+
+    width: 250px;
+    font-size: 24px;
+    text-align: center;
+    color: #fafafa;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: #ff8c3b6b;
+    border: none;
+    border-bottom: 3px solid #00000078;
+    transition: .5s ease all;
+}
+
+main section.box-principal article .buttons button:hover {
+    background: #fc7c206b;
+}
+
+*:disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed;
+}
